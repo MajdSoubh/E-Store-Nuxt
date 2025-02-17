@@ -126,3 +126,11 @@ small {
 table {
   border-collapse: collapse;
 }
+.icon {
+  display: block;
+  line-height: 1;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
