@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar />
+    <Cart />
     <div>
       <slot />
     </div>
