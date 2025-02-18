@@ -3,22 +3,7 @@ import { defineStore } from "pinia";
 
 export const useCartStore = defineStore("cart", {
   state: () => ({
-    items: [
-      {
-        id: 1,
-        price: 200,
-        title: "Watch",
-        quantity: 3,
-        image: "/images/headphone-1.jpg",
-      },
-      {
-        id: 2,
-        price: 200,
-        title: "Watch",
-        quantity: 3,
-        image: "/images/headphone-1.jpg",
-      },
-    ],
+    items: [],
     isCartOpen: false,
   }),
   getters: {

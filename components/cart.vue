@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Backdrop for contrast effect -->
+    <!-- Backdrop effect -->
     <transition name="fade">
       <div
         v-if="cart.isCartOpen"
@@ -78,28 +78,54 @@
                     <!-- Increase Quantity Button -->
                     <button
                       type="button"
-                      class="border border-black rounded-3 bg-transparent p-1"
+                      class="rounded-4 btn-control p-1 d-flex justify-content-center align-items-center"
+                      style="
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        border: 2px solid #dadabc;
+                      "
                       @click="cart.updateItem(item.id, 1)"
                     >
-                      <i class="icon bi bi-plus" style="font-size: 1.2rem"></i>
+                      <i
+                        class="icon bi bi-plus background-transparent"
+                        style="font-size: 1.4rem; color: #dadabc"
+                      ></i>
                     </button>
 
                     <!-- Decrease Quantity Button -->
                     <button
                       type="button"
-                      class="border border-black rounded-3 bg-transparent p-1"
+                      class="rounded-4 btn-control p-1 d-flex justify-content-center align-items-center"
+                      style="
+                        width: 1.8rem;
+                        height: 1.8rem;
+
+                        border: 2px solid #dadabc;
+                      "
                       @click="cart.updateItem(item.id, -1)"
                     >
-                      <i class="icon bi bi-dash" style="font-size: 1.2rem"></i>
+                      <i
+                        class="icon bi bi-dash background-transparent"
+                        style="font-size: 1.4rem; color: #dadabc"
+                      ></i>
                     </button>
 
                     <!-- Remove Item Button -->
                     <button
                       type="button"
-                      class="border border-black rounded-3 bg-transparent p-1"
+                      class="rounded-4 btn-control p-1 d-flex justify-content-center align-items-center"
+                      style="
+                        width: 1.8rem;
+                        height: 1.8rem;
+
+                        border: 2px solid #dadabc;
+                      "
                       @click="cart.removeItem(item.id)"
                     >
-                      <i class="icon bi bi-x" style="font-size: 1.2rem"></i>
+                      <i
+                        class="icon bi bi-x background-transparent"
+                        style="font-size: 1.4rem; color: #dadabc"
+                      ></i>
                     </button>
                   </div>
                 </div>
@@ -117,7 +143,7 @@
           <p class="mt-1">Shipping and taxes calculated at checkout.</p>
           <button
             @click="handleCheckout"
-            class="mt-3 w-100 d-flex align-items-center justify-content-center rounded-3 border-0"
+            class="mt-3 w-100 d-flex align-items-center text-uppercase justify-content-center rounded-3 border-0"
             style="
               padding: 0.7rem 1rem;
               background-color: #cbcbb0;
@@ -163,31 +189,11 @@ const cart = useCartStore();
   }
 }
 
-/* SLIDE IN/OUT TRANSITION */
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform 0.3s ease;
+.btn-control:hover {
+  background-color: #dadabc !important;
+  border: 1px solid #dadabc !important;
 }
-.slide-enter-from {
-  transform: translateX(100%);
-}
-.slide-enter-to {
-  transform: translateX(0);
-}
-.slide-leave-from {
-  transform: translateX(0);
-}
-.slide-leave-to {
-  transform: translateX(100%);
-}
-
-/* FADE TRANSITION FOR BACKDROP */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+.btn-control:hover i {
+  color: white !important;
 }
 </style>
