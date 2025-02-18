@@ -1,75 +1,13 @@
-# Nuxt Minimal Starter
+## E-Store
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Store app build nuxt for evaluations purposes
 
-## Setup
+## Screen Shots
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<p align="center">
+<img src="screenshots/cart.png" alt="cart" width="50%" >
+<img src="screenshots/electornic-page.png" alt="electornic-page" >
+<img src="screenshots/product-details.png" alt="product-details" width="50%" >
+<img src="screenshots/product-details-mobile.png" alt="product-details-mobile" width="50%" >
+<img src="screenshots/women-page-mobile.png" alt="women-page-mobile" width="50%" >
+</p>
