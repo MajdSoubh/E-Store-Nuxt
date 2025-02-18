@@ -1,11 +1,15 @@
 <template>
   <ClientOnly>
-    <div :id="props.id" class="carousel slide w-100" style="height: 460px">
+    <div
+      :id="props.id"
+      class="carousel slide w-100"
+      style="height: 460px; margin-bottom: 2.5rem"
+    >
       <!-- Dynamic Indicators -->
       <div
         v-if="slidesCount > 1"
         class="carousel-indicators m-0"
-        style="bottom: -32px"
+        style="bottom: -2rem"
       >
         <button
           v-for="(_, index) in slidesCount"

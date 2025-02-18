@@ -127,10 +127,20 @@ table {
   border-collapse: collapse;
 }
 .icon {
-  display: block;
+  display: inline-flex;
   line-height: 1;
+  justify-content: center;
+  align-items: center;
+}
+.icon::before {
+  color: inherit;
+  font-size: inherit;
 }
 p {
   padding: 0;
   margin: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
